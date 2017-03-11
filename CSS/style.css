@@ -266,8 +266,12 @@ header .hero img {
   padding.4em 0;
   text-align:center;
 }
-.testimonialquotes h2 {
-  color:#3498db;
+.testimonials h2 {
+  color:#e64d2c;
+}
+.testimonials p {
+  color:#353339;
+  font-size:16px;
 }
 .testimonialquotes ul li {
   list-style-type:none;
@@ -320,7 +324,58 @@ header .hero img {
   padding-top:30px;
   text-align:center;
 }
-.boxdown {
-  top:20px;
-  position:absolute;
+
+/* SIGN UP*/
+.signup2 h2 {
+  padding-top:50px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #454a5a;
+  background-image:linear-gradient(to top, #2b292f 0%, #2b292f 50%, #454a5a 50%, #454a5a 100%);
+  color: #ffffff;
+  height:150px;
+  position:relative;
+  overflow:hidden;
+  z-index:0;
+}
+footer p, footer nav ul {
+  font-size:14px;
+  font-weight:100;
+  text-align:center;
+  margin:10px auto 0;
+}
+footer nav ul li {
+  list-style-type:none;
+  display:inline;
+}
+footer nav ul li a {
+  color: #ffffff;
+  text-decoration:none;
+}
+footer .right-footer-block {
+  background-color:transparent;
+}
+footer .logo {
+  padding:2.35em 0;
+  margin:0 auto;
+  display:block;
+}
+ @media (min-width:992px) {
+  footer {
+    background-color:#2b292f;
+    background-image:linear-gradient(to left, #2b292f 0%, #2b292f 33.33337%, #454a5a 33.33337%, #454a5a 100%);
+    height:100px;
+  }
+  footer p, footer nav ul {
+    padding:2em 0;
+    text-align:left;
+  }
+  footer .right-footer-block {
+    background-color: #2b292f;
+  }
+ footer .logo {
+    padding: 2em 0 2em 1.5em;
+  } 
 }
