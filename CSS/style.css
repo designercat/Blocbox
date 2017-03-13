@@ -462,6 +462,11 @@ footer .logo {
   margin-top:8px;
 }
 
+/* SELECTED LINK */
+ a:active {
+  background-color:#654e9c;
+}
+
 /* CONTENT */
 .header {
   padding-bottom:80px;
