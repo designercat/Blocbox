@@ -393,34 +393,92 @@ footer .logo {
   background:#f7f7f7;
 }
 .left-nav {
-  height:110vh;
-  width:14.66666667%;
+  height:100%;
+  width:280px;
   color:#ffffff;
   background:#353339;
   background-image:linear-gradient(206deg, #454a5a 0%, #2b292f 94%);
   float:left;
-  position:fixed;
-  display:block;
+  position:absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -transition: all 0.3s ease-in-out;
+  transform: translate(-280px,0);
+  -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+  -o-transform: translate(-280px,0); /** Opera **/
+  -moz-transform: translate(-280px,0); /** Firefox **/
 }
+.left-nav.open {
+  display: block;
+  width: 280px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -transition: all 0.3s ease-in-out;
+  transform: translate(0,0);
+  -webkit-transform: translate(0,0); /** Chrome & Safari **/
+  -o-transform: translate(0,0); /** Opera **/
+  -moz-transform: translate(0,0); /** Firefox **/
+  z-index: 100px;
+}
+.hamburger {
+  position: absolute;
+  z-index: 1000;
+  background: #2b292f;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 15px;
+  border-raidus: 4px;
+  left: 5px;
+  top: 15px;
+}
+@media(min-width:992px) {
+  .left-nav {
+    height: 100vh;
+    width: 14.6666667%;
+    color: #ffffff;
+    background: #2b292f;
+    background-image:linear-gradient(206deg, #454a5a 0%, #2b292f 94%);
+    float: left;
+    position: fixed;
+    display: block;
+    transform: translate(0,0);
+    -webkit-transform:translate(0,0); /** Chrome & Safari **/
+    -o-transform: translate(0,0); /** Opera **/
+    moz-transform: translate(0,0); /** Firefox **/
+}
+.left-nav.open {
+    width: 14.6666667%;
+    transform: translate(0,0);
+    -webkit-transform:translate(0,0); /** Chrome & Safari **/
+    -o-transform: translate(0,0); /** Opera **/
+    moz-transform: translate(0,0); /** Firefox **/
+}
+.hamburger {
+  display: none;
+  }
+} 
 .left-nav .site-logo {
-  padding:20px 0; 
-  background:#2b292f;
-  display:block;
-  text-align:center;
+  padding: 20px 0; 
+  background: #2b292f;
+  display: block;
+  text-align: center;
 }
 .left-nav .items {
   padding: 0 6%;
 }
 .left-nav .items p {
-  font-weight:600;
-  text-transform:uppercase;
-  font-size:12px;
-  color:#e2e2e2;
-  line-height:15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #e2e2e2;
+  line-height: 15px;
 }
 .left-nav .items ul {
   margin: 0 0 40px;
-  padding:0;
+  padding: 0;
 }
 .left-nav .items ul li {
   list-style-type:none;
@@ -437,37 +495,53 @@ footer .logo {
   margin-right:8px;
 }
 /* LEFT NAVBAR SETTINGS */
-.left-nav .settings {
-  position:absolute; 
-  background:#2b292f;
-  width:100%;
-  bottom:0;
-  left:0;
-  right:0;
-  padding: 70px 0;
+
+.header .settings {
+  float: right;
+  position: absolute;
 }
-.left-nav .settings img {
+.header .settings {
+  position:absolute;
+  float:right;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  display:inline-block;
+  /*margin-bottom: 30px; */
+  /*margin: 0 0 30px; */
+  /*margin-left:20px; */
+} 
+.header .settings img {
   height:35px;
   width:35px;
   border-radius:50%;
-  margin-left:20px;
-  margin-bottom:70px;
+  float: right;
+  margin-left:20px; 
+  margin-bottom: 20px;
+  margin-right: 30px;
+  padding: 10px;
   display:inline-block;
 }
-.left-nav .settings p {
+.header .settings p {
   display:inline-block;
-  vertical-align:top;
-  padding-top:8px;
+  float: right;
   font-weight:400;
-  margin: 0 0 0 10px;
+  /*vertical-align:top; */
+  /*padding-top:8px; */
+  /*margin: 0; */
+  /*margin: 0 0 0 10px; */
 }
-.left-nav .settings a {
-  color:#e2e2e2;
+.header .settings a {
+  color:#353339;
   text-decoration:none;
-  text-align:right;
+  text-align:right; 
   float:right;
-  margin-right:20px;
-  margin-top:8px;
+  padding: 20px;
+  /*margin-right: 10px; */
+  /*margin-right:20px;
+  margin-top:8px; */
 }
 
 /* SELECTED LINK */
