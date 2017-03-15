@@ -45,8 +45,8 @@ p {
 @media (min-width:375px) {
   .container {
     width:240px;
-  }
-}
+  } 
+} 
 @media (min-width:768px) {
   .container {
     width: 750px;
@@ -85,24 +85,24 @@ header nav ul {
   float:right;
   margin:0;
 }
-header nav ul>li {
+header nav ul > li {
   list-style-type:none;
   display:inline-block;
   margin:0 15px;
 }
-header nav ul>li.btn-outline {
+header nav ul > li.btn-outline {
   padding:10px 15px;
   border:2px solid #ffffff;
   border-radius:4px;
 }
-header nav ul>li.btn-outline:hover {
+header nav ul > li.btn-outline:hover {
   background:#ffffff;
 }
-header nav ul>li>a {
+header nav ul > li > a {
   color:#ffffff;
   text-decoration:none;
 }
-header nav ul>li.btn-outline:hover>a {
+header nav ul > li.btn-outline:hover > a {
   color:#34495e;
 }
 header .hero {
@@ -166,18 +166,24 @@ header .hero img {
   margin: 0 auto;
   padding:4em 0;
 } 
-.Createnotes img {
-  position: absolute;
-  right:0;
+/*.Create-notes img {
+  /*position: absolute;
+  right:0; 
+  float:right; */
 }
 .benefits h2 {
-  color: #e64d2c;
+  color:#e64d2c;
+  font-size:36px;
+}
+.benefits h2 {
+  color:#e64d2c;
   font-size:36px;
 }
 .benefits p {
   font-size:20px;
   color:#353339;
   text-align:left;
+  line-height: 36px;
 }
 .benefits h2 p {
   float:left;
@@ -193,6 +199,7 @@ header .hero img {
 }
 .pricing h2, .pricing p {
   color:#F7F7F7;
+  line-height: 24px;
 }
 .pricing ul {
   margin:0 auto;
@@ -300,12 +307,12 @@ header .hero img {
   margin-left:-10px;
 }
 .testimonialquotes img {
-  height: 65px;
+  height:65px;
   width:65px;
   border-radius:50%;
   float:left;
   display:inline-block;
-  margin:20px 10px 0 0;
+  margin: 20px 10px 0 0;
 }
 .testimonialquotes p.name {
   float:left;
@@ -313,6 +320,7 @@ header .hero img {
   text-align:left;
   font-size:13px;
   margin-top:30px;
+  margin-left:5px;
 }
 .testimonials img {
   display: block;
@@ -362,7 +370,7 @@ footer .logo {
   margin:0 auto;
   display:block;
 }
- @media (min-width:992px) {
+@media (min-width:992px) {
   footer {
     background-color:#2b292f;
     background-image:linear-gradient(to left, #2b292f 0%, #2b292f 33.33337%, #454a5a 33.33337%, #454a5a 100%);
@@ -494,7 +502,7 @@ footer .logo {
 /*.content .header > a {
   float:right; 
 } */
-.btn {
+.content .btn {
   position:relative;
   float:left;
   margin-left:20px;
