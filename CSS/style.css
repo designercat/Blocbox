@@ -75,8 +75,12 @@ p {
 /* HEADER */
 header {
   color:#353339;
+  width: 1440px;
+  height: 1024px;
   background-image: url('../images/dashboard.png');
-  background-size: cover; 
+  background-size: 100% 100%;
+  margin: 0 auto;
+  display: block;
 }
 header nav {
   padding:1em 0;
@@ -90,7 +94,7 @@ header nav ul {
 header nav ul > li {
   list-style-type:none;
   display:inline-block;
-  margin:0 15px;
+  margin:10px 15px;
 }
 header nav ul > li.btn-outline {
   padding:10px 15px;
@@ -108,9 +112,11 @@ header nav ul > li.btn-outline:hover > a {
   color:#34495e;
 }
 header .hero {
-  text-align:left;
+  text-align: left;
   display:block;
   position:relative;
+  float: left;
+  margin: 20px;
 }
 header .hero h1 {
   font-size:48px;
@@ -123,19 +129,6 @@ header .hero p {
   font-weight:100;
   margin:10px 0 40px;
 }
-/*header .hero {
-  background-image: url('../images/dashboard.png');
-  background-size: cover; 
-}
-/*header .hero img {
-  display:block;
-  margin:3em auto 0;
-  /*background: url(images/dashboard.png) no-repeat center center fixed;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover; 
-} */ 
 
 /* BUTTONS */
 .btn {
